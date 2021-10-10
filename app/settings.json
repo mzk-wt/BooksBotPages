@@ -1,0 +1,244 @@
+{
+    "pages": [
+        {
+            "id": "001",
+            "name": "SF・ホラー・ファンタジー",
+            "username": "SFShinkanBot",
+            "title": "SF・ホラー・ファンタジー新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のSF・ホラー・ファンタジーの新刊情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "SF",
+            "urltype": "0"
+        },
+        {
+            "id": "002",
+            "name": "ミステリー・サスペンス・ハードボイルド",
+            "username": "MysteryShinkan",
+            "title": "ミステリー・サスペンス・ハードボイルド新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のミステリー・サスペンス・ハードボイルドの新刊情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "MYST",
+            "urltype": "0"
+        },
+        {
+            "id": "003",
+            "name": "アニソン・ゲーソン",
+            "username": "AniSongNew",
+            "title": "アニソン・ゲーソン新曲情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のアニメソング・ゲームミュージックの新曲情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINPU",
+            "genre": "ANIGAME",
+            "urltype": "0"
+        },
+        {
+            "id": "004",
+            "name": "少女・女性コミック",
+            "username": "GirlComicsNew",
+            "title": "少女・女性コミック新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の少女・女性コミックの新刊情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "COMICG",
+            "urltype": "0"
+        },
+        {
+            "id": "005",
+            "name": "少年・青年コミック",
+            "username": "BoyComicsInfo",
+            "title": "少年・青年コミック新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の少年・青年コミックの新刊情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "COMICB",
+            "urltype": "0"
+        },
+        {
+            "id": "006",
+            "name": "ライトノベル",
+            "username": "LightNovelsNew",
+            "title": "ラノベ新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のライトノベルの新刊情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "LNOVEL",
+            "urltype": "0"
+        },
+        {
+            "id": "007",
+            "name": "新書",
+            "username": "PaperbackNew",
+            "title": "新書新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の新書の新刊情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "PABA",
+            "urltype": "0"
+        },
+        {
+            "id": "008",
+            "name": "コンピュータ・IT書籍",
+            "username": "ComputerBookNew",
+            "title": "コンピュータ・IT書籍新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のコンピュータ・IT書籍の新刊情報 （Search from amazon.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "COMP",
+            "urltype": "0"
+        },
+        {
+            "id": "009",
+            "name": "絵本",
+            "username": "PicturebookNew",
+            "title": "絵本新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の絵本の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "PICBOOK",
+            "urltype": "1"
+        },
+        {
+            "id": "010",
+            "name": "エッセイ",
+            "username": "EssayNew",
+            "title": "エッセイ新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のエッセイの新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "ESSAY",
+            "urltype": "1"
+        },
+        {
+            "id": "011",
+            "name": "自己啓発",
+            "username": "SelfDevNew",
+            "title": "自己啓発本新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の自己啓発本の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "JIKOKEIHA",
+            "urltype": "1"
+        },
+        {
+            "id": "012",
+            "name": "サウンドトラック",
+            "username": "SoundtkNew",
+            "title": "サントラ新曲情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のサウンドトラックの新曲情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINPU",
+            "genre": "SOUNDTR",
+            "urltype": "1"
+        },
+        {
+            "id": "013",
+            "name": "洋楽ロック・ポップス",
+            "username": "RockPopsNew",
+            "title": "【洋楽】ロック・ポップス新曲情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の洋楽ロック・ポップスの新曲情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINPU",
+            "genre": "RKPOPS",
+            "urltype": "1"
+        },
+        {
+            "id": "014",
+            "name": "J-POP",
+            "username": "J_PopNew",
+            "title": "J-POP新曲情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のJ-POPの新曲情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINPU",
+            "genre": "JPOP",
+            "urltype": "1"
+        },
+        {
+            "id": "015",
+            "name": "アニメ",
+            "username": "AnimeDiscNew",
+            "title": "アニメ円盤新作情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のアニメ作品のDVD/Blu-ray新作情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "MOVIENEW",
+            "genre": "ANIMEMOVIE",
+            "urltype": "1"
+        },
+        {
+            "id": "016",
+            "name": "ビジネス",
+            "username": "BusinessBookNew",
+            "title": "ビジネス書新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のビジネス書の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "BUSINESS",
+            "urltype": "1"
+        },
+        {
+            "id": "017",
+            "name": "科学・技術",
+            "username": "ScienceBookNew",
+            "title": "科学・技術本新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の科学・技術本の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "SCIENCE",
+            "urltype": "1"
+        },
+        {
+            "id": "018",
+            "name": "人文・思想・社会",
+            "username": "HumanitiesBook",
+            "title": "人文・思想・社会書籍新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の人文・思想・社会書籍の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "HUMAN",
+            "urltype": "1"
+        },
+        {
+            "id": "019",
+            "name": "料理",
+            "username": "CookingBookNew",
+            "title": "料理本新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の料理本の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "COOKING",
+            "urltype": "1"
+        },
+        {
+            "id": "020",
+            "name": "ペット",
+            "username": "PetsBookInfo",
+            "title": "ペット書籍新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のペット書籍の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "PETS",
+            "urltype": "1"
+        },
+        {
+            "id": "021",
+            "name": "美術",
+            "username": "ArtBookInfo",
+            "title": "美術本新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の美術本の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "ART",
+            "urltype": "1"
+        },
+        {
+            "id": "022",
+            "name": "住まい・インテリア",
+            "username": "HouseBookInfo",
+            "title": "住まい・インテリア書籍新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の住まい・インテリア書籍の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "HOUSE",
+            "urltype": "1"
+        },
+        {
+            "id": "023",
+            "name": "ボーイズラブ",
+            "username": "BLBooksInfo",
+            "title": "BL本新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売のBL本の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "BL",
+            "urltype": "1"
+        },
+        {
+            "id": "024",
+            "name": "日本文学",
+            "username": "JPLiteraryBooks",
+            "title": "日本文学新刊情報",
+            "subtitle": "直近３ヶ月以内〜数ヶ月先に発売の日本文学の新刊情報 （Search from books.rakuten.co.jp）",
+            "dbtable": "SHINKAN",
+            "genre": "JPBUNGAKU",
+            "urltype": "1"
+        }
+    ]
+}

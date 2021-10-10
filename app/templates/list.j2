@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <style type="text/css">
+    .site {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .site-content {
+        flex: 1;
+    }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8HC2PMQVV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E8HC2PMQVV');
+    </script>
+</head>
+<body class="site">
+
+<!-- ヘッダ -->
+<header class="hero is-dark">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">{{ title }}</h1>
+            <h2 class="subtitle is-6">{{ subtitle }}</h2>
+        </div>
+    </div>
+</header>
+
+<div class="columns site-content p-2">
+    <!-- サイドメニュー -->
+    <div class="column is-narrow">
+        <!-- Twitterリンク -->
+        <div class="box">
+            <img src="../img/Twitter_Social_Icon_Circle_Color.png" style="width:30px; vertical-align:middle;">
+            <a href="{{ twurl }}" target="_blank" class="is-size-6">{{ username }}</a>
+        </div>
+        <!-- 書籍新刊情報 -->
+        <div class="box" style="width: 230px;">
+            <aside class="menu">
+                <p class="menu-label is-size-6">書籍新刊情報</p>
+                <ul class="menu-list">
+                    {% for link in menu['shinkan']['links'] %}
+                    <li class="is-size-7"><a href="{{ link['url'] }}">{{ link['text'] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <div class="column">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
+            <tr>
+                <th>発売日</th>
+                <th>タイトル</th>
+                <th>著者</th>
+                <th>出版社</th>
+                <th>ISBN</th>
+                <th>URL</th>
+            </tr>
+            {% for info in list %}
+            <tr>
+                <td nowrap>{{ info['releaseDate'] }}</td>
+                <td>{{ info['title'] }}</td>
+                <td>{{ info['author'] }}</td>
+                <td>{{ info['publisher'] }}</td>
+                <td>{{ info['isbn'] }}</td>
+                {% if info['urlType'] == '0' %}
+                <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">Amazonで見る</a></td>
+                {% else %}
+                <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">楽天ブックスで見る</a></td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+<!-- フッタ -->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>&copy; 2021 water-tree</p>
+    </div>
+</footer>
+
+</body>
+</html>
