@@ -1,6 +1,5 @@
 git pull origin main
 sh GeneratePages.sh
 git add ./docs/pages
-now = date
-git commit -m "page generated at ${now}"
+git commit -m "page generated at $(date)"
 git push origin main
