@@ -1,3 +1,5 @@
+cd `dirname $0`
+
 echo "Get latest apps" 
 git pull origin main
 
