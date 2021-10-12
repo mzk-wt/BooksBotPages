@@ -3,8 +3,6 @@ rm -r docs/pages
 
 # ページの自動生成
 cd app
-pip3 install jinja2
-pip3 install pymusql
 python GeneratePages.py
 cd ..
 
