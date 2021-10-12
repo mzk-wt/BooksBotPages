@@ -1,6 +1,4 @@
-pwd
 cd `dirname $0`
-pwd
 
 echo "Get latest apps" 
 git pull origin main

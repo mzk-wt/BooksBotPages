@@ -1,3 +1,5 @@
+# coding=utf-8
+
 import db
 
 ## ページ作成実行
