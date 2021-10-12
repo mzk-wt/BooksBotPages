@@ -7,6 +7,6 @@ echo "Do generate"
 sh GeneratePages.sh
 
 echo "Push generated pages"
-git add ./docs/pages
+git add .
 git commit -m "page generated at $(date)"
 git push origin main
