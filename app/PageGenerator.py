@@ -24,7 +24,8 @@ def generate(env, settings):
             'list': list,
             'listtype': page['dbtable'],
             'username': "@" + page['username'],
-            'twurl': "https://twitter.com/" + page['username']
+            'twurl': "https://twitter.com/" + page['username'],
+            'amazon': {'category': page['amazon_search_category'], 'key': page['amazon_search_key']}
         }
 
         # ページ出力
