@@ -57,30 +57,94 @@
                 </ul>
             </aside>
         </div>
+        <!-- 新曲新刊情報 -->
+        <div class="box" style="width: 230px;">
+            <aside class="menu">
+                <p class="menu-label is-size-6">新曲情報</p>
+                <ul class="menu-list">
+                    {% for link in menu['shinpu']['links'] %}
+                    <li class="is-size-7"><a href="{{ link['url'] }}">{{ link['text'] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </aside>
+        </div>
+        <!-- 新作DVD/Blu-ray情報 -->
+        <div class="box" style="width: 230px;">
+            <aside class="menu">
+                <p class="menu-label is-size-6" style="text-transform: none !important;">新作DVD／Blu-ray</p>
+                <ul class="menu-list">
+                    {% for link in menu['movie']['links'] %}
+                    <li class="is-size-7"><a href="{{ link['url'] }}">{{ link['text'] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </aside>
+        </div>
     </div>
 
     <!-- メインコンテンツ -->
     <div class="column">
         <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-7">
             <tr>
-                <th>発売日</th>
-                <th>タイトル</th>
-                <th>著者</th>
-                <th>出版社</th>
-                <th>ISBN</th>
-                <th>URL</th>
+                {% if listtype == "SHINKAN" %}
+                    <th>発売日</th>
+                    <th>タイトル</th>
+                    <th>著者</th>
+                    <th>出版社</th>
+                    <th>ISBN</th>
+                    <th>URL</th>
+
+                {% elif listtype == "SHINPU" %}
+                    <th>発売日</th>
+                    <th>タイトル</th>
+                    <th>アーティスト</th>
+                    <th>レーベル</th>
+                    <th>URL</th>
+
+                {% elif listtype == "MOVIENEW" %}
+                    <th>発売日</th>
+                    <th>タイトル</th>
+                    <th>スタッフ／出演者</th>
+                    <th>レーベル</th>
+                    <th>JANコード</th>
+                    <th>URL</th>
+                {% endif %}
             </tr>
             {% for info in list %}
             <tr>
-                <td nowrap>{{ info['releaseDate'] }}</td>
-                <td>{{ info['title'] }}</td>
-                <td>{{ info['author'] }}</td>
-                <td>{{ info['publisher'] }}</td>
-                <td>{{ info['isbn'] }}</td>
-                {% if info['urlType'] == '0' %}
-                <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">Amazonで見る</a></td>
-                {% else %}
-                <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">楽天ブックスで見る</a></td>
+                {% if listtype == "SHINKAN" %}
+                    <td nowrap>{{ info['releaseDate'] }}</td>
+                    <td>{{ info['title'] }}</td>
+                    <td>{{ info['author'] }}</td>
+                    <td>{{ info['publisher'] }}</td>
+                    <td>{{ info['isbn'] }}</td>
+                    {% if info['urlType'] == '0' %}
+                    <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">Amazon</a></td>
+                    {% else %}
+                    <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">楽天ブックス</a></td>
+                    {% endif %}
+
+                {% elif listtype == "SHINPU" %}
+                    <td nowrap>{{ info['releaseDate'] }}</td>
+                    <td>{{ info['title'] }}</td>
+                    <td>{{ info['artist'] }}</td>
+                    <td>{{ info['publisher'] }}</td>
+                    {% if info['urlType'] == '0' %}
+                    <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">Amazon</a></td>
+                    {% else %}
+                    <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">楽天ブックス</a></td>
+                    {% endif %}
+
+                {% elif listtype == "MOVIENEW" %}
+                    <td nowrap>{{ info['releaseDate'] }}</td>
+                    <td>{{ info['title'] }}</td>
+                    <td>{{ info['artist'] }}</td>
+                    <td>{{ info['label'] }}</td>
+                    <td>{{ info['jan'] }}</td>
+                    {% if info['urlType'] == '0' %}
+                    <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">Amazon</a></td>
+                    {% else %}
+                    <td><button class="button is-link is-light is-size-7" onclick="window.open('{{ info['url'] }}', '_blank');">楽天ブックス</a></td>
+                    {% endif %}
                 {% endif %}
             </tr>
             {% endfor %}
