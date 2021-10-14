@@ -28,7 +28,7 @@ def generate(env, settings):
             'listtype': page['dbtable'],
             'username': "@" + page['username'],
             'twurl': "https://twitter.com/" + page['username'],
-            'twcardimg': PAGE_ROOT + "pages/img/tw_card.png",
+            'twcardimg': PAGE_ROOT + "img/tw_card.png",
             'amazon': {'category': page['amazon_search_category'], 'key': page['amazon_search_key']}
         }
 
