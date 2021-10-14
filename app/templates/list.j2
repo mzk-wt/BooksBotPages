@@ -2,6 +2,15 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
+
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="{{ username }}" />
+    <meta property="og:url" content="{{ pageurl }}" />
+    <meta property="og:title" content="`{{ title }}" />
+    <meta property="og:description" content="{{ subtitle }}" />
+    <meta property="og:image" content="{{ twcardimg }}" />
+
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">

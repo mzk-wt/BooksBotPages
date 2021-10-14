@@ -2,6 +2,8 @@
 
 import db
 
+PAGE_ROOT = "https://mzk-wt.github.io/BooksBotPages/"
+
 ## ページ作成実行
 def generate(env, settings):
     # メニュー情報を作成
@@ -18,6 +20,7 @@ def generate(env, settings):
 
         # テンプレートへ渡すパラメータを用意
         params = {
+            'pageurl': PAGE_ROOT + "pages/list" + page['id'] + ".htm",
             'menu': menu,
             'title': page['title'],
             'subtitle': page['subtitle'],
@@ -25,6 +28,7 @@ def generate(env, settings):
             'listtype': page['dbtable'],
             'username': "@" + page['username'],
             'twurl': "https://twitter.com/" + page['username'],
+            'twcardimg': PAGE_ROOT + "pages/img/tw_card.png",
             'amazon': {'category': page['amazon_search_category'], 'key': page['amazon_search_key']}
         }
 
