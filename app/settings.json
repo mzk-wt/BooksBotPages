@@ -10,7 +10,7 @@
             "genre": "SF",
             "urltype": "0",
             "amazon_search_category": "Books",
-            "amazon_search_key": "SF"
+            "amazon_search_key": ""
         },
         {
             "id": "002",
@@ -33,7 +33,7 @@
             "dbtable": "SHINPU",
             "genre": "ANIGAME",
             "urltype": "0",
-            "amazon_search_category": "",
+            "amazon_search_category": "Music",
             "amazon_search_key": ""
         },
         {
@@ -45,7 +45,7 @@
             "dbtable": "SHINKAN",
             "genre": "COMICG",
             "urltype": "0",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -57,7 +57,7 @@
             "dbtable": "SHINKAN",
             "genre": "COMICB",
             "urltype": "0",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -69,7 +69,7 @@
             "dbtable": "SHINKAN",
             "genre": "LNOVEL",
             "urltype": "0",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -81,7 +81,7 @@
             "dbtable": "SHINKAN",
             "genre": "PABA",
             "urltype": "0",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -93,7 +93,7 @@
             "dbtable": "SHINKAN",
             "genre": "COMP",
             "urltype": "0",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -105,7 +105,7 @@
             "dbtable": "SHINKAN",
             "genre": "PICBOOK",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -117,7 +117,7 @@
             "dbtable": "SHINKAN",
             "genre": "ESSAY",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -129,7 +129,7 @@
             "dbtable": "SHINKAN",
             "genre": "JIKOKEIHA",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -141,7 +141,7 @@
             "dbtable": "SHINPU",
             "genre": "SOUNDTR",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Music",
             "amazon_search_key": ""
         },
         {
@@ -153,7 +153,7 @@
             "dbtable": "SHINPU",
             "genre": "RKPOPS",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Music",
             "amazon_search_key": ""
         },
         {
@@ -165,7 +165,7 @@
             "dbtable": "SHINPU",
             "genre": "JPOP",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Music",
             "amazon_search_key": ""
         },
         {
@@ -177,7 +177,7 @@
             "dbtable": "MOVIENEW",
             "genre": "ANIMEMOVIE",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "DVD",
             "amazon_search_key": ""
         },
         {
@@ -189,7 +189,7 @@
             "dbtable": "SHINKAN",
             "genre": "BUSINESS",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -201,7 +201,7 @@
             "dbtable": "SHINKAN",
             "genre": "SCIENCE",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -213,7 +213,7 @@
             "dbtable": "SHINKAN",
             "genre": "HUMAN",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -225,7 +225,7 @@
             "dbtable": "SHINKAN",
             "genre": "COOKING",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -237,7 +237,7 @@
             "dbtable": "SHINKAN",
             "genre": "PETS",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -249,7 +249,7 @@
             "dbtable": "SHINKAN",
             "genre": "ART",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -261,7 +261,7 @@
             "dbtable": "SHINKAN",
             "genre": "HOUSE",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -273,7 +273,7 @@
             "dbtable": "SHINKAN",
             "genre": "BL",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
@@ -285,7 +285,7 @@
             "dbtable": "SHINKAN",
             "genre": "JPBUNGAKU",
             "urltype": "1",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         }
     ]
