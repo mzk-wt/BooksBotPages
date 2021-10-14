@@ -10,7 +10,7 @@
             "genre": "SF",
             "urltype": "0",
             "amazon_search_category": "Books",
-            "amazon_search_key": "SF ホラー ファンタジー"
+            "amazon_search_key": "SF"
         },
         {
             "id": "002",
@@ -21,7 +21,7 @@
             "dbtable": "SHINKAN",
             "genre": "MYST",
             "urltype": "0",
-            "amazon_search_category": "",
+            "amazon_search_category": "Books",
             "amazon_search_key": ""
         },
         {
