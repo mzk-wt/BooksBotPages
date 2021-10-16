@@ -44,47 +44,59 @@
 <div class="columns site-content p-2">
     <div class="column is-three-fifths is-offset-one-fifth">
         <div class="columns">
-            <!-- 新刊情報 -->
-            <dvi class="column one-of-third">
-                <div class="box bordered-box">
-                    <div class="menu">
-                        <p class="menu-label is-size-6 has-text-grey-darker">新刊情報</p>
-                        <ul class="menu-list">
-                            {% for link in menu['shinkan']['links'] %}
-                            <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </dvi>
+            <div class="column">
+                <div class="columns">
+            
+                    <!-- 新刊情報 -->
+                    <dvi class="column one-of-third">
+                        <div class="box bordered-box">
+                            <div class="menu">
+                                <p class="menu-label is-size-6 has-text-grey-darker">新刊情報</p>
+                                <ul class="menu-list">
+                                    {% for link in menu['shinkan']['links'] %}
+                                    <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </dvi>
 
-            <!-- 新曲情報 -->
-            <dvi class="column one-of-third">
-                <div class="box bordered-box">
-                    <div class="menu">
-                        <p class="menu-label is-size-6 has-text-grey-darker">新曲情報</p>
-                        <ul class="menu-list">
-                            {% for link in menu['shinpu']['links'] %}
-                            <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </dvi>
+                    <!-- 新曲情報 -->
+                    <dvi class="column one-of-third">
+                        <div class="box bordered-box">
+                            <div class="menu">
+                                <p class="menu-label is-size-6 has-text-grey-darker">新曲情報</p>
+                                <ul class="menu-list">
+                                    {% for link in menu['shinpu']['links'] %}
+                                    <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </dvi>
 
-            <!-- 新作DVD/Blu-ray情報 -->
-            <dvi class="column one-of-third">
-                <div class="box bordered-box">
-                    <div class="menu">
-                        <p class="menu-label is-size-6 has-text-grey-darker" style="text-transform: none !important;">新作DVD/Blu-ray情報</p>
-                        <ul class="menu-list">
-                            {% for link in menu['movie']['links'] %}
-                            <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+                    <!-- 新作DVD/Blu-ray情報 -->
+                    <dvi class="column one-of-third">
+                        <div class="box bordered-box">
+                            <div class="menu">
+                                <p class="menu-label is-size-6 has-text-grey-darker" style="text-transform: none !important;">新作DVD/Blu-ray情報</p>
+                                <ul class="menu-list">
+                                    {% for link in menu['movie']['links'] %}
+                                    <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </dvi>
+
                 </div>
-            </dvi>
+
+                <!-- Amazon イージーリンク -->
+                <div class="has-text-centered">
+                    <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=48&l=ez&f=ifr&linkID=47f694eae5fefaac7e5dbb7601f5f694&t=muta0e-22&tracking_id=muta0e-22" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
