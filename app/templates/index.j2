@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SFShinkanBot" />
+    <meta property="og:url" content="{{ pageurl }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ subtitle }}" />
+    <meta property="og:image" content="{{ twcardimg }}" />
+
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8HC2PMQVV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E8HC2PMQVV');
+    </script>
+</head>
+<body class="site fix-background">
+
+<!-- ヘッダ -->
+<header class="hero is-dark">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">{{ title }}</h1>
+            <h2 class="subtitle is-6">{{ subtitle }}</h2>
+        </div>
+    </div>
+</header>
+
+<div class="columns site-content p-2">
+    <div class="column is-three-fifths is-offset-one-fifth">
+        <div class="columns">
+            <!-- 新刊情報 -->
+            <dvi class="column one-of-third">
+                <div class="box bordered-box">
+                    <div class="menu">
+                        <p class="menu-label is-size-6 has-text-grey-darker">新刊情報</p>
+                        <ul class="menu-list">
+                            {% for link in menu['shinkan']['links'] %}
+                            <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </dvi>
+
+            <!-- 新曲情報 -->
+            <dvi class="column one-of-third">
+                <div class="box bordered-box">
+                    <div class="menu">
+                        <p class="menu-label is-size-6 has-text-grey-darker">新曲情報</p>
+                        <ul class="menu-list">
+                            {% for link in menu['shinpu']['links'] %}
+                            <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </dvi>
+
+            <!-- 新作DVD/Blu-ray情報 -->
+            <dvi class="column one-of-third">
+                <div class="box bordered-box">
+                    <div class="menu">
+                        <p class="menu-label is-size-6 has-text-grey-darker" style="text-transform: none !important;">新作DVD/Blu-ray情報</p>
+                        <ul class="menu-list">
+                            {% for link in menu['movie']['links'] %}
+                            <li class="is-size-7"><a href="./pages/{{ link['url'] }}">{{ link['text'] }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </dvi>
+        </div>
+    </div>
+</div>
+
+<!-- フッタ -->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>&copy; 2021 water-tree</p>
+    </div>
+</footer>
+
+</body>

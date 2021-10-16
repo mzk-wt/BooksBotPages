@@ -13,7 +13,20 @@ def generate(env, settings):
         'movie': generateMenu(settings, "MOVIENEW")
     }
 
-    # ページを作成
+    # indexページを作成
+    params = {
+        'pageurl': PAGE_ROOT,
+        'menu': menu,
+        'title': "Curation service of new release items",
+        'subtitle': "直近３ヶ月以内〜数ヶ月先に発売予定の新作アイテムの情報をお届けします。"
+    }
+    tmpl = env.get_template('index.j2')
+    out = tmpl.render(params)
+    f = open('output/index.htm', 'x')
+    f.write(out)
+    f.close()
+
+    # 一覧ページを作成
     for page in settings['pages']:
         # 一覧情報を作成
         list = generateList(page)

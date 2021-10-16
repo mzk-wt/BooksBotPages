@@ -8,6 +8,18 @@
     flex: 1;
 }
 
+/* 固定背景 */
+.fix-background {
+  background-image: url("../img/tw_card.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /*background-color:rgba(255,255,255,0.8);*/
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
 /* PageTopリンク */
 #page_top{
   width: 50px;
@@ -41,4 +53,9 @@
   left: 0;
   margin: auto;
   text-align: center;
+}
+
+.bordered-box {
+  border: 2px solid;
+  border-color: #333;
 }
