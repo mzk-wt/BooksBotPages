@@ -127,6 +127,23 @@
                 {% endif %}
             </tr>
             {% for info in list %}
+
+            <!-- 30件ごとにAmazonアフィリエイトリンクを表示 -->
+            {% if loop.index0 != 0 and loop.index0%30 == 0 %}
+            <tr>
+                {% if listtype == "SHINKAN" %}
+                <td colspan="6" style="vertical-align: top;">
+                {% elif listtype == "SHINPU" %}
+                <td colspan="5">
+                {% elif listtype == "MOVIENEW" %}
+                <td colspan="6">
+                {% endif %}
+                    <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=13&l=ur1&category={{ amazon['category2'] }}&f=ifr&linkID=b99eefaa8eb4efdbf3976243d6c2fb8b&t=muta0e-22&tracking_id=muta0e-22" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+                    【PR】
+                </td>
+            </tr>
+            {% endif %}
+
             <tr>
                 {% if listtype == "SHINKAN" %}
                     <td nowrap>{{ info['releaseDate'] }}</td>

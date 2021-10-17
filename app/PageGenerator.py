@@ -42,7 +42,11 @@ def generate(env, settings):
             'username': "@" + page['username'],
             'twurl': "https://twitter.com/" + page['username'],
             'twcardimg': PAGE_ROOT + "img/tw_card.png",
-            'amazon': {'category': page['amazon_search_category'], 'key': page['amazon_search_key']}
+            'amazon': {
+                'category': page['amazon_search_category'],
+                'category2': page['amazon_search_category'].lower(),
+                'key': page['amazon_search_key']
+            }
         }
 
         # ページ出力
