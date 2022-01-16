@@ -128,8 +128,8 @@
             </tr>
             {% for info in list %}
 
-            <!-- 30件ごとにAmazonアフィリエイトリンクを表示 -->
             {% if loop.index0 != 0 and loop.index0%30 == 0 %}
+            <!-- 30件ごとにAmazonアフィリエイトリンクを表示 -->
             <tr>
                 {% if listtype == "SHINKAN" %}
                 <td colspan="6" style="vertical-align: top;">
