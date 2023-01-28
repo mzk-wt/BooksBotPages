@@ -2,7 +2,8 @@
 rm -r docs/pages
 
 # ページの自動生成
-cd app
+#cd app
+cd app2
 python GeneratePages.py
 cd ..
 
