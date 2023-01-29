@@ -8,6 +8,6 @@ python GeneratePages.py
 cd ..
 
 # 生成されたページをdocsフォルダへ移動
-mv -f app/output/index.htm docs
+mv -f app2/output/index.htm docs
 mkdir docs/pages
-cp -r app/output/ docs/pages/
+cp -r app2/output/ docs/pages/
