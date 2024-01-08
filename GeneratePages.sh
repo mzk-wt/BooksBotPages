@@ -4,7 +4,7 @@ rm -r docs/pages
 # ページの自動生成
 #cd app
 cd app2
-python GeneratePages.py
+~/.pyenv/versions/anaconda3-2022.10/bin/python GeneratePages.py
 cd ..
 
 # 生成されたページをdocsフォルダへ移動
