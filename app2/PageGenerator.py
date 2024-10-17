@@ -81,51 +81,60 @@ def generateList(page):
 ## 新刊情報一覧を作成
 def generateShinkanList(page):
     list = []
-    result = db.get(page['collection_name'], [], 'releaseDate')
-    for data in result:
-        d = data.to_dict()
-        list.append({
-            'releaseDate': formatDatetime(d['releaseDate'], '%Y-%m-%d'),
-            'title': d['title'],
-            'author': '、'.join([a.get('name') for a in d['author']]),
-            'publisher': '、'.join([a.get('name') for a in d['publisher']]),
-            'isbn': '-',
-            'url': d['url'],
-            'urlType': page['urltype']
-        })
+    collections = page['collection_name'].split()
+
+    for collection in collections:
+        result = db.get(collection, [], 'releaseDate')
+        for data in result:
+            d = data.to_dict()
+            list.append({
+                'releaseDate': formatDatetime(d['releaseDate'], '%Y-%m-%d'),
+                'title': d['title'],
+                'author': '、'.join([a.get('name') for a in d['author']]),
+                'publisher': '、'.join([a.get('name') for a in d['publisher']]),
+                'isbn': '-',
+                'url': d['url'],
+                'urlType': page['urltype']
+            })
     return list
 
 ## 新曲情報一覧を作成
 def generateShinpuList(page):
     list = []
-    result = db.get(page['collection_name'], [], 'releaseDate')
-    for data in result:
-        d = data.to_dict()
-        list.append({
-            'releaseDate': formatDatetime(d['releaseDate'], '%Y-%m-%d'),
-            'title': d['title'],
-            'artist': '、'.join([a.get('name') for a in d['artist']]),
-            'publisher': d['manufacturer'],
-            'url': d['url'],
-            'urlType': page['urltype']
-        })
+    collections = page['collection_name'].split()
+
+    for collection in collections:
+        result = db.get(collection, [], 'releaseDate')
+        for data in result:
+            d = data.to_dict()
+            list.append({
+                'releaseDate': formatDatetime(d['releaseDate'], '%Y-%m-%d'),
+                'title': d['title'],
+                'artist': '、'.join([a.get('name') for a in d['artist']]),
+                'publisher': d['manufacturer'],
+                'url': d['url'],
+                'urlType': page['urltype']
+            })
     return list
 
 ## 新作映画一覧を作成
 def generateMovieList(page):
     list = []
-    result = db.get(page['collection_name'], [], 'releaseDate')
-    for data in result:
-        d = data.to_dict()
-        list.append({
-            'releaseDate': formatDatetime(d['releaseDate'], '%Y-%m-%d'),
-            'title': d['title'],
-            'artist': '、'.join([a.get('name') for a in d['artist']]),
-            'label': d['manufacturer'],
-            'jan': '-',
-            'url': d['url'],
-            'urlType': page['urltype']
-        })
+    collections = page['collection_name'].split()
+
+    for collection in collections:
+        result = db.get(collection, [], 'releaseDate')
+        for data in result:
+            d = data.to_dict()
+            list.append({
+                'releaseDate': formatDatetime(d['releaseDate'], '%Y-%m-%d'),
+                'title': d['title'],
+                'artist': '、'.join([a.get('name') for a in d['artist']]),
+                'label': d['manufacturer'],
+                'jan': '-',
+                'url': d['url'],
+                'urlType': page['urltype']
+            })
     return list
 
 ## HTMLファイルのパスを取得
