@@ -81,7 +81,7 @@ def generateList(page):
 ## 新刊情報一覧を作成
 def generateShinkanList(page):
     list = []
-    collections = page['collection_name'].split()
+    collections = page['collection_name'].split(',')
 
     for collection in collections:
         result = db.get(collection, [], 'releaseDate')
@@ -101,7 +101,7 @@ def generateShinkanList(page):
 ## 新曲情報一覧を作成
 def generateShinpuList(page):
     list = []
-    collections = page['collection_name'].split()
+    collections = page['collection_name'].split(',')
 
     for collection in collections:
         result = db.get(collection, [], 'releaseDate')
@@ -120,7 +120,7 @@ def generateShinpuList(page):
 ## 新作映画一覧を作成
 def generateMovieList(page):
     list = []
-    collections = page['collection_name'].split()
+    collections = page['collection_name'].split(',')
 
     for collection in collections:
         result = db.get(collection, [], 'releaseDate')
